@@ -72,7 +72,6 @@ public class Pong extends Applet implements Runnable, KeyListener
 			graphics.drawString("PONG for CSCI3430", (WIDTH/2) - 80, 130);
 			graphics.drawString("Up/Down to move", (WIDTH/2) - 80, 160);
 			graphics.drawString("Press Enter to start", (WIDTH/2) - 80, 190);
-			graphics.drawString("Press Escape to quit", (WIDTH/2) - 80, 220);
 		}
 		g.drawImage(img, 0,0, this);
 	}
@@ -120,10 +119,6 @@ public class Pong extends Applet implements Runnable, KeyListener
 		else if (e.getKeyCode() == KeyEvent.VK_ENTER)
 		{
 			gameStarted = true;
-		}
-		else if (e.getKeyCode() == KeyEvent.VK_ESCAPE)
-		{
-			System.exit(0);
 		}
 	}
 
